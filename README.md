@@ -14,7 +14,7 @@ All Ethereum smart contract developers
 ## Features
 
  * An automated control mechanism for upgrading and removing logic contracts
- * Built in safety features (so you don't accidentally overwrite something)  
+ * Built in safety (so you don't accidentally overwrite something)  
  * Hashes your ds_slot strings
 
 
