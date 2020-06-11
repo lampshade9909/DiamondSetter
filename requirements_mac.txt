@@ -69,7 +69,7 @@ pycryptodome==3.7.0
 pyethash==0.1.27
 pyethereum==1.0.0
 pylru==1.0.9
-pyOpenSSL==16.2.0
+pyOpenSSL==17.5.0
 pyparsing==2.2.0
 pyperclip==1.5.27
 pysha3==1.0.2
