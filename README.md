@@ -13,7 +13,7 @@ All Ethereum smart contract developers
 
 ## Features
 
- * An automated control mechanism for upgrading and removing logic contracts
+ * An automated control mechanism for upgrading and removing logic contracts under your proxy umbrella
  * Built in safety (so you don't accidentally overwrite something)  
  * Hashes your ds_slot strings
 
