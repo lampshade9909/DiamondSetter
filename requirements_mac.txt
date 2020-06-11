@@ -1,13 +1,7 @@
-0x-contract-addresses==3.0.0
-0x-contract-artifacts==3.0.0
-0x-contract-wrappers==2.0.0
-0x-json-schemas==2.1.0
-0x-order-utils==4.0.0
 argh==0.26.2
 asn1crypto==0.22.0
 attrdict==2.0.0
 attrs==19.3.0
-beautifulsoup4==4.8.1
 bitcoin==1.1.42
 blinker==1.4
 brotlipy==0.6.0
@@ -57,7 +51,6 @@ lxml==4.4.1
 matplotlib==2.2.3
 mitmproxy==2.0.2
 mypy-extensions==0.4.1
-Naked==0.1.31
 nbformat==4.4.0
 numpy==1.13.3
 packaging==16.8
