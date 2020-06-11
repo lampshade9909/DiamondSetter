@@ -8,7 +8,7 @@ The Diamond Standard, [written by Nick Mudge](https://github.com/ethereum/EIPs/i
 
 ## Who is this intended for
 
-All Ethereum smart contract developers.  
+All Ethereum smart contract developers
 
 
 ## Features
