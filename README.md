@@ -52,7 +52,7 @@ All Ethereum smart contract developers
     tutorial_logic_a = 0xd37589ee0c581ef58efab0d2adb08d08b373125f
     tutorial_properties = 0xc630aae56ac54f52ee7fb757bf6b23f86a8aacea
 
-The config specifies the names and addresses of your contracts.  The URL should be your ethereum node URL.  This can be a service like https://deploy.radar.tech/, https://infura.io/, https://alchemyapi.io/, or can simply point directly to your own personal node.     
+The config specifies the names and addresses of your contracts.  The URL should be your ethereum node URL.  This can be a service like [Deploy](https://deploy.radar.tech/), [Infura](https://infura.io/), [Alchemy](https://alchemyapi.io/), or can simply point directly to your own personal node.     
 
 
 ## Commands
