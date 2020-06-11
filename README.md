@@ -1,7 +1,7 @@
 # Diamond Setter
 Ethereum smart contract manager for the Diamond Standard
 
-The Diamond Setter is a simple and effective contract manager for your Diamond Standard based contracts.  It makes maintaining and upgrading your contracts a breeze by automating the upgrade logic.  You simply provide your contract addresses and ABI and call the `set` command.  It automates the process of determining what needs upgraded/removed by calling the proper Diamond Standard functions.  
+The Diamond Setter is a simple and effective contract manager for your Diamond Standard based contracts.  It makes maintaining and upgrading your contracts a breeze by automating the upgrade logic.  You simply provide your contract addresses and ABI then call the `set` command.  It automates the process of determining what needs upgraded/removed by calling the proper Diamond Standard functions.  
 
 The Diamond Standard, [written by Nick Mudge](https://github.com/ethereum/EIPs/issues/2535), is a set of contracts that can access the same storage variables and while sharing the same Ethereum address to achieve upgradability and scalability.  [Nick discussed this new storage technique here](https://medium.com/1milliondevs/new-storage-layout-for-proxy-contracts-and-diamonds-98d01d0eadb) 
 
