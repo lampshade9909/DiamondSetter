@@ -6,19 +6,19 @@ The Diamond Setter is a simple and effective contract manager for your Diamond S
 The Diamond Standard, [written by Nick Mudge](https://github.com/ethereum/EIPs/issues/2535), is a set of contracts that can access the same storage variables and while sharing the same Ethereum address to achieve upgradability and scalability.  [Nick discussed this new storage technique here](https://medium.com/1milliondevs/new-storage-layout-for-proxy-contracts-and-diamonds-98d01d0eadb) 
 
 
-## Who should use the Diamond Setter?
+## Who is this intended for
 
-Anyone currently using or planning on using the Diamond Standard.  Or anyone interested in Ethereum smart contract developemnt.  
+All Ethereum smart contract developers.  
 
 
-## Diamond Setter features:
+## Features
 
  * An automated control mechanism for upgrading and removing logic contracts
  * Built in safety features (so you don't accidentally overwrite something)  
  * Hashes your ds_slot strings
 
 
-## How to use:
+## How to use
  1. Clone the repo.
  
  1. Set up your python environment with `virtualenv`.
@@ -91,7 +91,7 @@ Including a `ds_slot` in more than one contract enables sharing storage between 
 To intentionally overwrite or remove a contract from the proxy, [simply add the contract's address here](https://github.com/lampshade9909/DiamondSetter/blob/7e298b4235b4dbb7ed7e78a422f830e202a6b521/Libraries/set.py#L71).  This tells the `set` command that it's allowed to remove or overwrite this contract's function selectors.  
 
 
-## A danger to be aware of
+## Dangers of upgrading
 Be careful that you do not upgrade yourself out of your own contract!  This software takes steps to prevent that from happening accidentally, but it is still possible.  One critical known way this can be achieved is by overwriting the proxy owner function selector.  Say you use the property `address owner` as the proxy owner.  It is possible for you to make a diamond cut and delegate that same exact function selector to a logic contract.  This is bad because this prevents you from accessing the proxy function's owner.  Depending on your logic, that may lock you out of your own proxy!
 
 The `set` command's safety measure will help protect you from doing this by accident, but here are some additional steps I take to help prevent this from happening
@@ -103,12 +103,12 @@ The `set` command's safety measure will help protect you from doing this by acci
  Obviously this depends on what you're trying to build.  But these are some helpful ideas.       
 
 
-## Contact:
+## Contact
 
 http://JoeyZacherl.com/
 
 Joey.Zacherl@gmail.com
 
 
-## License:
+## License
 MIT license. See the license file. Anyone can use or modify this software for their purposes.
