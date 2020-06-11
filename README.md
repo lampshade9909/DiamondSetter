@@ -19,17 +19,21 @@ Anyone currently using or planning on using the Diamond Standard.  Or anyone int
 
 
 ## How to use:
- 1. Clone the repo
+ 1. Clone the repo.
  
- 2. Set up your python environment with `virtualenv`
+ 1. Set up your python environment with `virtualenv`.
  
- 3. Install the python packages in `requirements.txt` file based on which OS you're using
+ 1. Install the python packages in `requirements.txt` file based on which OS you're using.
  
- 4. Set up your config by copying the `diamondSetter_template.config` and creating your own personal `diamondSetter.config`
+ 1. Set up your config by copying the `diamondSetter_template.config` and creating your own personal `diamondSetter.config`.
+ 
+ 1. Add your contract ABI JSON files to the `Contracts` directory.  Make sure the file name exactly matches the contract name in the config.  The config file does not expect the `.json` extension.
+ 
+ 1. Set your mainnet deployed contract addresses in the config.      
 
- 5. Use the `hash` command for hashing strings to put into your contract source code
+ 1. Use the `hash` command for hashing strings to put into your contract source code.
  
- 6. Use the `set` command to upgrade/remove contracts as you desire
+ 1. Use the `set` command to upgrade/remove contracts as you desire.
 
 
 ## Config
