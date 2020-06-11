@@ -1,11 +1,11 @@
 # Diamond Setter
 Ethereum smart contract manager for the Diamond Standard
 
+The Diamond Setter is a simple and effective contract manager for your Diamond Standard based contracts.  It makes maintaining and upgrading your contracts a breeze by automating the upgrade logic.  You simply provide your contract addresses and ABI and call the `set` command.  It automates the process of determining what needs upgraded/removed by calling the proper Diamond Standard functions.  
+
 The Diamond Standard, written by Nick Mudge, is a set of contracts that can access the same storage variables and while sharing the same Ethereum address to achieve upgradability and scalability. 
 
 https://github.com/ethereum/EIPs/issues/2535
-
-The Diamond Setter is a simple and effective contract manager for your Diamond Standard based contracts.   
 
 
 ## Who should use the Diamond Setter?
@@ -32,6 +32,7 @@ Anyone currently using or planning on using the Diamond Standard.  Or anyone int
  5. Use the `hash` command for hashing strings to put into your contract source code
  
  6. Use the `set` command to upgrade/remove contracts as you desire
+
 
 ## Config
 
@@ -75,7 +76,12 @@ Command: `python diamondSetter.py hash diamond.storage.tutorial.properties`
     // ds_slot = keccak256(diamond.storage.tutorial.properties);
     assembly { ds_slot := 0x8009ef9e316d149758ddd03fd4cb6dd67f0acee3d8cdf1372cf6f2ac6d689dbd }
 
-This assembly code gets added to your solidity smart contract.  I've included some important comments to help you ensure you're using the `ds_slot` properly.  Using the same `ds_slot` across multiple contracts will enable sharing of storage.  Using a unique `ds_slot` prevents sharing.  The sharing is all within the proxy contract umbrella.  Only contracts under the proxy umbrella can share storage.   
+This assembly code gets added to your solidity smart contract.  I've included some important comments to help you ensure you're using the `ds_slot` properly.  Using the same `ds_slot` across multiple contracts will enable sharing of storage.  Using a unique `ds_slot` prevents sharing.  The sharing is all within the proxy contract umbrella.  Only contracts under the proxy umbrella can share storage.
+
+
+## When to share storage
+Including a `ds_slot` in more than one contract enables sharing storage between those contracts.  You'll want to do this when you're deploying many contracts that all want to reference the same storage variables.  An example is found here when the `StorageContract_Properties` are used both in the [Tutorial_Logic_A](https://github.com/lampshade9909/DiamondSetter/blob/063b02b732a2407beeaf5d2488fa5886d47d2eb5/Contracts/tutorial_logic_a.sol#L39) contract and [Tutorial_Properties](https://github.com/lampshade9909/DiamondSetter/blob/063b02b732a2407beeaf5d2488fa5886d47d2eb5/Contracts/tutorial_properties.sol#L39) contract.  Notice that in both cases the `ds_slot` is exactly `0x8009ef9e316d149758ddd03fd4cb6dd67f0acee3d8cdf1372cf6f2ac6d689dbd`.  
+   
 
 ## Contact:
 
