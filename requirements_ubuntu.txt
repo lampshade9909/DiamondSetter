@@ -50,7 +50,7 @@ soupsieve==1.9.4
 stringcase==1.2.0
 toolz==0.10.0
 tornado==5.0.2
-urllib3==1.25.7
+urllib3==1.24.2
 web3==4.8.2
 webencodings==0.5.1
 websocket==0.2.1
