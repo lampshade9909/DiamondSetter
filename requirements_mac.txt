@@ -49,7 +49,7 @@ kiwisolver==1.0.1
 lru-dict==1.1.6
 lxml==4.4.1
 matplotlib==2.2.3
-mitmproxy==2.0.2
+mitmproxy==7.0.3
 mypy-extensions==0.4.1
 nbformat==4.4.0
 numpy==1.13.3
