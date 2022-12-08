@@ -2,7 +2,7 @@ attrdict==2.0.1
 attrs==19.3.0
 bitcoin==1.1.42
 bs4==0.0.1
-certifi==2019.11.28
+certifi==2022.12.7
 chardet==3.0.4
 cytoolz==0.10.1
 Deprecated==1.2.7
